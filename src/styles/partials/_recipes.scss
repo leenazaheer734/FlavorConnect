@@ -1,0 +1,41 @@
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+
+  @include respond-to(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to(mobile) {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-card {
+    background-color: $background-color; // White background for cards
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h3 {
+      margin-top: 15px;
+      font-size: 1.5em;
+      color: $primary-color; // Tomato Red for recipe titles
+    }
+
+    p {
+      color: $text-color; // Dark Charcoal for descriptions
+      font-size: $base-font-size - 2;
+    }
+
+    &:hover {
+      border: 2px solid $highlight-color; // Sage Green border on hover
+    }
+  }
+}

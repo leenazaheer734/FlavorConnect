@@ -1,0 +1,33 @@
+.hero {
+  height: 80vh;
+  background-color: $light-background; // Light Gray background for hero
+  position: relative;
+  @include flex-center;
+
+  .hero-content {
+    text-align: center;
+
+    h1 {
+      font-size: 2.5em;
+      color: $primary-color; // Tomato Red for headings
+    }
+
+    p {
+      color: $muted-text-color; // Slate Gray for subheading
+      font-size: 1.2em;
+    }
+  }
+
+  .image-carousel {
+    position: absolute;
+    bottom: 50px;
+    @include flex-center;
+
+    img {
+      width: 200px;
+      margin: 0 10px;
+      border-radius: 10px;
+      border: 2px solid $highlight-color; // Sage Green border around images
+    }
+  }
+}

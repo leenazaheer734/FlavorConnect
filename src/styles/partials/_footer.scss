@@ -1,0 +1,10 @@
+.footer {
+  background-color: $secondary-color; // Dark Slate Gray background
+  color: $background-color; // White text
+  text-align: center;
+  padding: 20px;
+
+  p {
+    font-size: $base-font-size;
+  }
+}

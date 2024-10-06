@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorConnect - Upload Recipe</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">FlavorConnect</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Cuisines</a></li>
+                    <li><a href="#">My Profile</a></li>
+                </ul>
+            </nav>
+            <button class="login-btn">Login</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Upload Your Recipe</h2>
+            <form>
+                <label for="recipe-title">Recipe Title</label>
+                <input type="text" id="recipe-title" placeholder="Enter your recipe title" required>
+
+                <label for="recipe-description">Description</label>
+                <textarea id="recipe-description" rows="4" placeholder="Describe your recipe"></textarea>
+
+                <label for="recipe-cuisine">Cuisine</label>
+                <select id="recipe-cuisine">
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                </select>
+
+                <label for="recipe-ingredients">Ingredients</label>
+                <input type="text" id="recipe-ingredients" placeholder="Add ingredients" required>
+
+                <label for="recipe-image">Upload Image</label>
+                <input type="file" id="recipe-image" accept="image/*">
+
+                <button type="submit" class="submit-btn">Upload Recipe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FlavorConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>

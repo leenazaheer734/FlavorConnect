@@ -1,0 +1,36 @@
+.header {
+  background-color: $primary-color; // Tomato Red background
+  padding: 10px 20px; // Reduce padding to control height
+  display: flex;
+  justify-content: space-between;
+  align-items: center; // Align items vertically in the center
+  height: 80px; // Set a fixed height for the header
+
+  .logo {
+    img {
+      width: 150px; // Constrain the logo width
+      height: auto; // Keep the image's aspect ratio
+    }
+  }
+
+  .navbar {
+    ul {
+      list-style: none;
+      display: flex; // Use flexbox for horizontal layout
+      align-items: center; // Ensure nav links are vertically centered
+
+      li {
+        margin: 0 15px;
+
+        a {
+          color: $background-color; // White text
+          text-decoration: none;
+          font-size: $base-font-size;
+          &:hover {
+            color: $accent-color; // Lemon Yellow on hover
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.navbar {
+    @include flex-center;
+    justify-content: space-between;
+    background-color: $secondary-color;
+    padding: $spacing-unit;
+  
+    .logo {
+      color: $primary-color;
+      font-size: 24px;
+    }
+  
+    nav ul {
+      list-style: none;
+      display: flex;
+      li {
+        margin-left: $spacing-unit;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
+        }
+      }
+    }
+  
+    .login-btn {
+      @include button($primary-color, #fff);
+    }
+  }
+  

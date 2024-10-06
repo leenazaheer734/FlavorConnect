@@ -1,0 +1,29 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Recipe Sharing Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leenazaheer734/FlavorConnect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leenazaheer734/FlavorConnect/issues"
+  },
+  "homepage": "https://github.com/leenazaheer734/FlavorConnect#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.79.4"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}

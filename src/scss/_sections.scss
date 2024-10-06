@@ -1,0 +1,70 @@
+.search-section {
+    text-align: center;
+    @include flex-center;
+    padding: $spacing-unit;
+  
+    .search-input, .filter-dropdown {
+      margin-right: $spacing-unit;
+      padding: 8px;
+      font-size: 16px;
+    }
+  
+    .search-btn {
+      @include button($primary-color, #fff);
+    }
+  }
+  
+  .explore-section {
+    padding: $spacing-unit;
+    text-align: center; // This is now above the nested rules
+  
+    h2 {
+      @include responsive-text(24px);
+    }
+  
+    .cuisine-options {
+      @include flex-center;
+      flex-wrap: wrap;
+  
+      .cuisine {
+        background-color: $primary-color;
+        color: #fff;
+        padding: 8px 16px;
+        margin: 8px;
+        border-radius: 5px;
+      }
+    }
+  }
+  
+  .upload-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: $spacing-unit;
+  
+    h2 {
+      @include responsive-text(24px);
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+  
+      label {
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+  
+      input, select, textarea {
+        margin-bottom: $spacing-unit;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+  
+      .submit-btn {
+        @include button($primary-color, #fff);
+      }
+    }
+  }
+  

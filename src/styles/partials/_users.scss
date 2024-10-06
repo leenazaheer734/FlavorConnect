@@ -1,0 +1,27 @@
+.user-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .user-card {
+    @extend .recipe-card; // Inherit from recipe card
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid $highlight-color; // Sage Green border for user images
+    }
+
+    h3 {
+      font-size: 1.2em;
+      color: $primary-color; // Tomato Red for user names
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 0.9em;
+      color: $text-color; // Dark Charcoal for user stats
+    }
+  }
+}
